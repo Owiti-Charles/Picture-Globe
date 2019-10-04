@@ -1,6 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import Image
 
 
 def index(request):
-    return render(request, 'pictures/index.html')
+    images = Image.objects.all()
+    print (images)
+    return render(request, 'pictures/index.html', {'images': images})

@@ -2,5 +2,17 @@
 
 
 {% block content %}
-    <h2>welcome</h2>
+<h2>welcome</h2>
+<div class="container-fluid">
+    <div class="card-columns">
+        {% for image in images %}
+
+
+        <div class="card">
+                <img src="{{image.image.url}}" alt="{{image.title}}" class="card-img">
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
 {% endblock %}
