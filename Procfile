@@ -1,1 +1,1 @@
-web: gunicorn pictureshare.wgsi
+web: gunicorn pictureshare.wsgi
