@@ -52,3 +52,16 @@ class TestImage(TestCase):
         Image.objects.all().delete()
         Location.objects.all().delete()
         Category.objects.all().delete()
+
+
+class TestLocation(TestCase):
+    def setUp(self):
+        self.location = Location(name='Moringa')
+        self.location.save_location()
+
+    def test_instance(self):
+        self.assertTrue(isinstance(self.location, Location))
+
+    def test_save_location(self):
+        locations = Location.get_locations()
+        self.assertTrue(len(locations) > 0)
