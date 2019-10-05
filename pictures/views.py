@@ -15,3 +15,6 @@ def search_results(request):
         message = f"{search_term}"
         print(searched_images)
         return render(request, 'pictures/search_results.html', {"message": message, "images": searched_images})
+    else:
+        message = "You haven't searched for any image category"
+        return render(request, 'pictures/search_results.html', {"message": message})
