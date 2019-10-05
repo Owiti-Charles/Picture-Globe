@@ -63,5 +63,11 @@ class TestLocation(TestCase):
         self.assertTrue(isinstance(self.location, Location))
 
     def test_save_location(self):
+        self.location.save_location()
         locations = Location.get_locations()
         self.assertTrue(len(locations) > 0)
+
+    def test_delete_image(self):
+        self.location.delete_location()
+        images = Image.objects.all()
+        self.assertTrue(len(images) == 0)
