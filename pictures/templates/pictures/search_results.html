@@ -1,0 +1,27 @@
+{% extends 'layouts.html' %}
+{% block content %}
+<div class="container">
+
+    <div class="row">
+        {% if images %}
+        <h2>Found {{ images|length }} images in this '{{message}}' category</h2>
+        {% else %}
+        <h2> Found 0 images for your search {{message}}</h2>
+        {% endif %}
+
+    </div>
+
+    <div class="row">
+
+        {% if images %}
+        <div class="card-columns">
+            {% for image in images %}
+                <div class="card">
+                    <img src="{{image.image.url}}" alt="{{image.name}}" class="card-img">
+                </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
