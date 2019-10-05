@@ -7,6 +7,7 @@ background-image:url(/static/images/bg.jpeg)
 }
 
 .modalcard{
-background-color:rgba(240,240,240,0.9);
-color:blue;
+background-color:rgba(0,0,0,0.9);
+color:white;
+padding:3%;
 }
