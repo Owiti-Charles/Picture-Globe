@@ -23,23 +23,17 @@
                     </div>
                     <div class="modal-body">
                         <img src="{{image.image.url}}" alt="{{image.name}}" class="img-fluid">
-
                         <p>{{image.description}}</p>
                     </div>
                     <div class="modal-footer">
-                        <div class="pull-left">
-                            <input type="text" class="form-control" id="imagelink" value="nothing">
-                            <button type="button" class="btn btn-success" onclick="copyaction()">Copy</button>
-                        </div>
-
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-
-
+                       <input class="form-control input-lg" type="text"
+                            value="{{image.image.url}}" id="{{image.id}}.url">
+                        <button class="btn btn-success btn-sm" onclick="copyLink('{{image.id}}.url')">Copy</button>
+                        <button type="button" class="btn btn-outline-danger btn-sm" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
-
         {% endfor %}
     </div>
 </div>
