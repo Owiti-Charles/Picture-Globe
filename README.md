@@ -12,13 +12,13 @@ This is a Django application for personal gallery that allows a user to upload i
 ## Screenshots 
 ###### Home page
  
-<img src="https://raw.githubusercontent.com/Owiti-Charles/Picture-Globe/master/static/images/scre.png">
+<img src="https://raw.githubusercontent.com/Owiti-Charles/Picture-Globe/master/static/images/finalscreenshot.png">
  
  ###### Search results
- <img src="https://raw.githubusercontent.com/Owiti-Charles/Picture-Globe/master/static/images/search.png"> 
+ <img src="https://raw.githubusercontent.com/Owiti-Charles/Picture-Globe/master/static/images/searchfood.png"> 
 
  ###### Image Details 
- <img src="https://raw.githubusercontent.com/Owiti-Charles/Picture-Globe/master/static/images/scrnsht2.png">
+ <img src="https://raw.githubusercontent.com/Owiti-Charles/Picture-Globe/master/static/images/modalscrn.png">
  
 ## User Story  
   
