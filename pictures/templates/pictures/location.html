@@ -25,6 +25,7 @@
                     <div class="modal-body">
                         <img src="{{image.image.url}}" alt="{{image.name}}" class="img-fluid">
                         <p>{{image.description}}</p>
+                        <span class="btn btn-sm btn-outline-success">{{image.category | title}}</span> <a href="/location/{{image.location}}" class="btn btn-sm btn-outline-info">{{image.location}}</a>
                     </div>
                     <div class="modal-footer">
                         <input class="form-control input-lg" type="text"

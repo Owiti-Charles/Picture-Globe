@@ -44,3 +44,9 @@ margin-bottom:3%;
 #btn{
 margin-right:6px;
 }
+.cat{
+float:center;
+background:gray;
+padding:4px;
+border-radius:6px;
+}

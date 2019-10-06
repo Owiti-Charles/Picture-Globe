@@ -30,7 +30,7 @@
             <div class="modal-dialog modal-dialog-centered modal-md" role="document">
                 <div class="modal-content modalcard">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="imageheader">{{image.name}} <span></span></h5>
+                        <h5 class="modal-title" id="imageheader">{{image.name}}</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -38,7 +38,7 @@
                     <div class="modal-body">
                         <img src="{{image.image.url}}" alt="{{image.name}}" class="img-fluid">
                         <p class="imgdesc text-center">{{image.description}}</p>
-                        <p>{{image.location}} {{image.category}}</p>
+                        <span class="btn btn-sm btn-outline-success">{{image.category}}</span> <a href="/location/{{image.location}}" class="btn btn-sm btn-outline-info">{{image.location}}</a>
                     </div>
                     <div class="modal-footer">
                         <input class="form-control input-lg" type="text"
