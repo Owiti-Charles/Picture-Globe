@@ -9,8 +9,17 @@ This is a Django application for personal gallery that allows a user to upload i
 ##  Live Link  
  Click [View Site](https://picturesharen.herokuapp.com/)  to visit the site
   
-## Screenshots  
-  
+## Screenshots 
+###### Home page
+ 
+<img src="https://raw.githubusercontent.com/Owiti-Charles/Picture-Globe/master/static/images/scre.png">
+ 
+ ###### Search results
+ <img src="https://raw.githubusercontent.com/Owiti-Charles/Picture-Globe/master/static/images/search.png"> 
+
+ ###### Image Details 
+ <img src="https://raw.githubusercontent.com/Owiti-Charles/Picture-Globe/master/static/images/scrnsht2.png">
+ 
 ## User Story  
   
 * View different photos that interest them  
