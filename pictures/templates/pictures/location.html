@@ -3,45 +3,44 @@
 <div class="container">
     <h2> Gallery</h2>
     <hr>
-    <div class="row">
 
-        {% if location_images %}
-        <div class="card-columns">
+    {% if location_images %}
+    <div class="card-columns">
 
-            {% for image in location_images %}
+        {% for image in location_images %}
 
-            <div class="card" data-toggle="modal" data-target="#{{image.id}}">
-                <img src="{{image.image.url}}" alt="{{image.name}}" class="card-img">
-            </div>
-            <div class="modal fade " id="{{image.id}}" tabindex="-1" role="dialog"
-                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content modalcard">
-                        <div class="modal-header">
-                            <h5 class="modal-title d-block mx-auto" id="exampleModalLongTitle">{{image.name}}</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="{{image.image.url}}" alt="{{image.name}}" class="img-fluid">
-                            <p>{{image.description}}</p>
-                        </div>
-                        <div class="modal-footer">
-                            <input class="form-control input-lg" type="text"
-                                   value="{{image.image.url}}" id="{{image.id}}.url">
-                            <button class="btn btn-success btn-sm" onclick="copyLink('{{image.id}}.url')">Copy</button>
-                            <button type="button" class="btn btn-outline-danger btn-sm" data-dismiss="modal">Close
-                            </button>
-                        </div>
+        <div class="card" data-toggle="modal" data-target="#{{image.id}}">
+            <img src="{{image.image.url}}" alt="{{image.name}}" class="card-img">
+        </div>
+        <div class="modal fade " id="{{image.id}}" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content modalcard">
+                    <div class="modal-header">
+                        <h5 class="modal-title d-block mx-auto" id="exampleModalLongTitle">{{image.name}}</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{{image.image.url}}" alt="{{image.name}}" class="img-fluid">
+                        <p>{{image.description}}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <input class="form-control input-lg" type="text"
+                               value="{{image.image.url}}" id="{{image.id}}.url">
+                        <button class="btn btn-success btn-sm" onclick="copyLink('{{image.id}}.url')">Copy</button>
+                        <button type="button" class="btn btn-outline-danger btn-sm" data-dismiss="modal">Close
+                        </button>
                     </div>
                 </div>
             </div>
-
-
-            {% endfor %}
         </div>
-        {% endif %}
+
+
+        {% endfor %}
     </div>
+    {% endif %}
+
 </div>
 {% endblock %}
