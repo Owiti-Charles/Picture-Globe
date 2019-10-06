@@ -20,6 +20,10 @@ h3{
 color:white;
 font-family: 'Special Elite', cursive;
 }
+#locations{
+color:white;
+font-family: 'Special Elite', cursive;
+}
 hr{
 background:white;
 height:2px;
@@ -36,4 +40,7 @@ font-family: 'Vollkorn', serif;
 }
 #found{
 margin-bottom:3%;
+}
+#btn{
+margin-right:6px;
 }
