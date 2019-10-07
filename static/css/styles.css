@@ -21,9 +21,13 @@ margin-top:34%;
 font-size:45px;
 font-weight:bolder;
 }
+a{
+text-decoration:none;
+}
 .image{
 font-family: 'Special Elite', cursive;
 margin-bottom:18%;
+
 }
 body{
  scroll-behavior: smooth;
