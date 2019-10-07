@@ -12,7 +12,7 @@ This is a Django application for personal gallery that allows a user to upload i
 ## Screenshots 
 ###### Home page
  
-<img src="https://raw.githubusercontent.com/Owiti-Charles/Picture-Globe/master/static/images/finalscreenshot.png">
+<img src="https://raw.githubusercontent.com/Owiti-Charles/Picture-Globe/master/static/images/landingpage.png">
  
  ###### Search results
  <img src="https://raw.githubusercontent.com/Owiti-Charles/Picture-Globe/master/static/images/searchfood.png"> 
@@ -28,12 +28,10 @@ This is a Django application for personal gallery that allows a user to upload i
 * Copy a link to the photo to share with my friends.  
 * View photos based on the location they were taken.  
   
-## BDD  
-  
-  
+
   
 ## Setup and Installation  
-To get the code..  
+To get the project .......  
   
 ##### Cloning the repository:  
  ```bash 
