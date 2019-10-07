@@ -12,6 +12,8 @@ background-position:center;
 background-size:cover;
 }
 .overlay{
+margin:0;
+padding:0;
 background-color:rgba(49, 83, 15,0.3);
 }
 .imagea{
@@ -21,9 +23,10 @@ font-weight:bolder;
 }
 .image{
 font-family: 'Special Elite', cursive;
-margin-bottom:5%;
+margin-bottom:18%;
 }
 body{
+ scroll-behavior: smooth;
 background-image:url(/static/images/g.jpg);
 background-attachment:fixed;
 background-repeat:no-repeat;
