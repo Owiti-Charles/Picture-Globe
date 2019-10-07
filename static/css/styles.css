@@ -1,17 +1,38 @@
 h2 {
 color:white;
-margin-top:5%;
+margin-top:2%;
 font-size:35px;
 font-family: 'Special Elite', cursive;
 }
-
-body{
+.boded{
 background-image:url(/static/images/bg.jpeg);
+padding-top:2%;
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+}
+.overlay{
+background-color:rgba(49, 83, 15,0.3);
+}
+.imagea{
+margin-top:34%;
+font-size:45px;
+font-weight:bolder;
+}
+.image{
+font-family: 'Special Elite', cursive;
+margin-bottom:5%;
+}
+body{
+background-image:url(/static/images/g.jpg);
 background-attachment:fixed;
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
 }
 
 .modalcard{
-background-color:rgba(10,10,10,0.9);
+background-color:rgba(10,10,10,0.8);
 color:white;
 padding:3%;
 border:none;
